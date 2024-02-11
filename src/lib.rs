@@ -1,8 +1,9 @@
 fn fizzbuzz(num: u64) -> String {
     match (num % 3, num % 5) {
+        (0, 0) => "FizzBuzz".to_string(),
         (0, _) => "Fizz".to_string(),
         (_, 0) => "Buzz".to_string(),
-        _ => num.to_string()
+        _ => num.to_string(),
     }
 }
 
