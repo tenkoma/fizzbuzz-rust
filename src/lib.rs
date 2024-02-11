@@ -1,8 +1,9 @@
+use anyhow::Result;
 use clap::Parser;
 
 /// Rust FizzBuzz
 #[derive(Debug, Parser)]
-#[command(author, version, about)]
+#[command(author, version)]
 pub struct Args {
     /// number
     #[arg(help = "Input number", value_name = "NUMBER", default_value = "100")]
@@ -16,6 +17,13 @@ fn fizzbuzz(num: u64) -> String {
         (_, 0) => "Buzz".to_string(),
         _ => num.to_string(),
     }
+}
+
+pub fn run(args: Args) -> Result<()> {
+    for i in 1..(args.number + 1) {
+        println!("{}", fizzbuzz(i));
+    }
+    Ok(())
 }
 
 #[cfg(test)]
