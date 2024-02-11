@@ -101,6 +101,7 @@ name = "fizzbuzz"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "clap_builder",
  "clap_derive",
 ]
 
