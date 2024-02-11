@@ -16,4 +16,10 @@ mod tests {
     fn passing_two_returns_the_string_two() {
         assert_eq!(fizzbuzz(2), String::from("2"));
     }
+
+    /// 3を渡すと文字列'Fizz'を返す
+    #[test]
+    fn passing_three_returns_the_string_fizz() {
+        assert_eq!(fizzbuzz(3), String::from("Fizz"));
+    }
 }
