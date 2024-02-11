@@ -1,5 +1,8 @@
 fn fizzbuzz(num: u64) -> String {
-    String::from("1")
+    match num {
+        2 => String::from("2"),
+        _ => String::from("1")
+    }
 }
 
 #[cfg(test)]
