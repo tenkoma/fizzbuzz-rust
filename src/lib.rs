@@ -25,4 +25,10 @@ mod tests {
     fn passing_three_returns_the_string_fizz() {
         assert_eq!(fizzbuzz(3), String::from("Fizz"));
     }
+
+    /// 5を渡すと文字列'Buzz'を返す
+    #[test]
+    fn passing_five_returns_the_string_buzz() {
+        assert_eq!(fizzbuzz(5), String::from("Buzz"));
+    }
 }
