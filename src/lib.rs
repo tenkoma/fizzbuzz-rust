@@ -1,3 +1,14 @@
+use clap::Parser;
+
+/// Rust FizzBuzz
+#[derive(Debug, Parser)]
+#[command(author, version, about)]
+pub struct Args {
+    /// number
+    #[arg(help = "Input number", value_name = "NUMBER", default_value = "100")]
+    number: u64,
+}
+
 fn fizzbuzz(num: u64) -> String {
     match (num % 3, num % 5) {
         (0, 0) => "FizzBuzz".to_string(),
