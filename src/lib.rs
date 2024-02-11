@@ -32,4 +32,10 @@ mod tests {
     fn passing_five_returns_the_string_buzz() {
         assert_eq!(fizzbuzz(5), String::from("Buzz"));
     }
+
+    /// 15を渡すと文字列'FizzBuzz'を返す
+    #[test]
+    fn passing_fifteen_returns_the_string_fizzbuzz() {
+        assert_eq!(fizzbuzz(15), String::from("FizzBuzz"));
+    }
 }
