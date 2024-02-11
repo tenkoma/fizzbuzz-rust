@@ -1,5 +1,8 @@
 fn fizzbuzz(num: u64) -> String {
-    num.to_string()
+    match (num % 3) {
+        0 => "Fizz".to_string(),
+        _ => num.to_string()
+    }
 }
 
 #[cfg(test)]
