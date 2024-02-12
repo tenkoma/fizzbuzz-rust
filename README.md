@@ -2,10 +2,19 @@
 
 Rust implementation of FizzBuzz
 
-# run
+# Installation
 
 ```shell
-cargo run 15
+cargo install --git https://github.com/tenkoma/fizzbuzz-rust.git
+```
+
+# Usage
+
+```shell
+fizzbuzz
+```
+```shell
+fizzbuzz 15
 ```
 
 # test
